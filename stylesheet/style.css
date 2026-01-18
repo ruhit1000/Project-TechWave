@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* shared style */
+
+.clr-white {
+    color: white;
+}
+
+.btn-primary {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10000px;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    color: white;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-secondary {
+    margin-left: 8px;
+    border: 1px solid rgba(0, 255, 136, 1);
+    background: transparent;
+    color: #00FF88;
+}
+
+/* main style */
+
+header {
+    background-color: #1A0B2E;
+}
+
+nav {
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: rgba(145, 0, 248, 1);
+}
+
+nav .logo h2 {
+    font-size: 2.5rem;
+}
+
+.menu ul {
+    display: flex;
+    gap: 32px;
+}
+
+.menu ul li {
+    list-style: none;
+    font-weight: 500;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.ham-menu {
+    display: none;
+}
+
+.banner {
+    background: url(../assets/hero-bg.png);
+    height: 760px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 101px;
+}
+
+.hero-container {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-image {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    border: 8px solid rgba(42, 24, 108, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgb(145, 0, 248));
+}
+
+/* .banner-image img {
+    position: relative;
+} */
+
+.badge {
+    width: 75px;
+    background-color: #00FF88;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    box-shadow: 0 3px 27px 0 #00ff8850;
+    position: relative;
+    left: 352px;
+    top: 52px;
+}
+
+.banner-text {
+    margin-top: 40px;
+}
+
+.banner-text h1 {
+    font-size: 3.75rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.banner-text p {
+    margin-bottom: 24px;
+}
+
+.banner-text button {
+    padding: 12px 20px;
+    gap: 8px;
+}
+
+
+/* responsiveness for small device */
+@media screen and (max-width:576px) {
+    nav {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav .logo h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav .btn-primary {
+        display: none;
+    }
+
+    .ham-menu {
+        display: inline;
+    }
+
+    
+}
+
+
+/* responsiveness for tablet device */
+@media screen and (min-width:577px) and (max-width:992px) {
+    nav {
+        width: 90%;
+        padding: 20px;
+    }
+}
