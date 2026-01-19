@@ -42,7 +42,8 @@ html {
 
 .feature-container,
 .episodes-container,
-.podcast-container {
+.podcast-container,
+.host-container {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -51,7 +52,8 @@ html {
 
 .feature-container h2,
 .podcast-text h2,
-.episodes-container h2 {
+.episodes-container h2,
+.host-container h2 {
     font-size: 3rem;
     margin-bottom: 40px;
 }
@@ -281,6 +283,50 @@ nav .logo h2 {
     color: #00FF88;
 }
 
+.host-container h2 {
+    margin-top: 120px;
+}
+
+.host-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+}
+
+.host-details {
+    text-align: left;
+}
+
+.host-details h3 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.host-details p {
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.host-social {
+    display: flex;
+    gap: 8px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .hide {
     display: none !important;
@@ -349,7 +395,8 @@ nav .logo h2 {
 
     .podcast-container,
     .feature-container,
-    .episodes-container {
+    .episodes-container,
+    .host-container {
         width: 100%;
     }
 
@@ -359,7 +406,8 @@ nav .logo h2 {
 
     .podcast-text h2,
     .feature-container h2,
-    .episodes-container h2 {
+    .episodes-container h2,
+    .host-container h2 {
         font-size: 2rem;
     }
 
@@ -387,7 +435,8 @@ nav .logo h2 {
         grid-row: span 1;
     }
 
-    .episode-cards-container {
+    .episode-cards-container,
+    .host-card {
         flex-direction: column;
         gap: 16px;
     }
@@ -407,6 +456,18 @@ nav .logo h2 {
 
     .episode-card .duration {
         margin: 16px;
+    }
+
+    .host-container h2 {
+        margin-top: 60px;
+    }
+
+    .host-details {
+        text-align: center;
+    }
+
+    .host-social {
+        justify-content: center;
     }
 
 
@@ -458,12 +519,24 @@ nav .logo h2 {
         grid-column: span 2;
     }
 
-    .episode-cards-container {
+    .episode-cards-container, .host-card {
         flex-direction: column;
     }
 
     .episode-card iframe {
         width: 100%;
+    }
+
+    .host-container h2 {
+        margin-top: 60px;
+    }
+
+    .host-details {
+        text-align: center;
+    }
+
+    .host-social {
+        justify-content: center;
     }
 
 }
