@@ -43,7 +43,8 @@ html {
 .feature-container,
 .episodes-container,
 .podcast-container,
-.host-container {
+.host-container,
+.footer-container {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -327,6 +328,38 @@ nav .logo h2 {
     justify-content: center;
 }
 
+footer {
+    padding: 120px;
+    background-image: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-container h1 {
+    font-size: 5rem;
+    margin-bottom: 32px;
+    font-weight: 900;
+}
+
+.channels ul {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.channels ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.footer-container p {
+    margin-top: 32px;
+}
+
 
 .hide {
     display: none !important;
@@ -352,7 +385,8 @@ nav .logo h2 {
         display: none;
     }
 
-    .ham-menu {
+    .ham-menu,
+    .channels {
         display: inline;
     }
 
@@ -389,14 +423,16 @@ nav .logo h2 {
 
     #podcast,
     #features,
-    #episodes {
+    #episodes,
+    footer {
         padding: 40px 15px;
     }
 
     .podcast-container,
     .feature-container,
     .episodes-container,
-    .host-container {
+    .host-container,
+    .footer-container {
         width: 100%;
     }
 
@@ -470,6 +506,26 @@ nav .logo h2 {
         justify-content: center;
     }
 
+    .footer-container h1 {
+        font-size: 3rem;
+        margin-bottom: 24px;
+    }
+
+    .channels ul {
+        width: 255px;
+        margin: 0 auto;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .footer-container p {
+        margin-top: 24px;
+    }
+
+    footer {
+        background-size: 100% 100%;
+    }
+
 
 }
 
@@ -483,7 +539,8 @@ nav .logo h2 {
 
     #podcast,
     #features,
-    #episodes {
+    #episodes,
+    footer {
         padding: 80px 20px;
     }
 
@@ -519,7 +576,8 @@ nav .logo h2 {
         grid-column: span 2;
     }
 
-    .episode-cards-container, .host-card {
+    .episode-cards-container,
+    .host-card {
         flex-direction: column;
     }
 
@@ -537,6 +595,10 @@ nav .logo h2 {
 
     .host-social {
         justify-content: center;
+    }
+
+    .footer-container h1 {
+        font-size: 4rem;
     }
 
 }
