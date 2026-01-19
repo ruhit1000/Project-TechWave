@@ -188,6 +188,65 @@ nav .logo h2 {
     margin-bottom: 16px;
 }
 
+#features {
+    background-color: #230E3D;
+    padding: 120px 200px;
+}
+
+.feature-container {
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feature-container h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards-container .feature-card:nth-child(1) {
+    grid-row: span 2;
+}
+
+.cards-container .feature-card:nth-child(2) {
+    grid-column: span 2;
+}
+
+.cards-container .feature-card:nth-child(3) {
+    grid-column: span 2;
+}
+
+.cards-container .feature-card:nth-child(4) {
+    grid-column: span 2;
+}
+
+.feature-card {
+    padding: 40px;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-card img {
+    width: 60px;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
 
 
 .hide {
@@ -249,11 +308,13 @@ nav .logo h2 {
         font-size: 2.5rem;
     }
 
-    #podcast {
+    #podcast,
+    #features {
         padding: 40px 15px;
     }
 
-    .podcast-container {
+    .podcast-container,
+    .feature-container {
         width: 100%;
     }
 
@@ -261,7 +322,8 @@ nav .logo h2 {
         padding-bottom: 40px;
     }
 
-    .podcast-text h2 {
+    .podcast-text h2,
+    .feature-container h2 {
         font-size: 2rem;
     }
 
@@ -275,6 +337,20 @@ nav .logo h2 {
         gap: 40px;
     }
 
+    .cards-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 16px;
+    }
+
+    .cards-container .feature-card:nth-child(1),
+    .cards-container .feature-card:nth-child(2),
+    .cards-container .feature-card:nth-child(3),
+    .cards-container .feature-card:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
 
 }
 
@@ -286,11 +362,11 @@ nav .logo h2 {
         padding: 20px;
     }
 
-    #podcast {
+    #podcast, #features {
         padding: 80px 20px;
     }
 
-    .podcast-container {
+    .podcast-container, .feature-container {
         width: 100%;
     }
 
@@ -304,12 +380,29 @@ nav .logo h2 {
         gap: 40px;
     }
 
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .cards-container .feature-card:nth-child(1),
+    .cards-container .feature-card:nth-child(2),
+    .cards-container .feature-card:nth-child(3),
+    .cards-container .feature-card:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .cards-container .feature-card:nth-child(5) {
+        grid-column: span 2;
+    }
+
 }
 
 /* responsiveness for large tablet device */
 @media screen and (min-width:993px) and (max-width:1200px) {
 
-    #podcast {
+    #podcast, #features {
         padding: 80px 20px;
     }
 
@@ -321,5 +414,22 @@ nav .logo h2 {
     .podcast-data {
         margin-top: 80px;
         gap: 40px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .cards-container .feature-card:nth-child(1),
+    .cards-container .feature-card:nth-child(2),
+    .cards-container .feature-card:nth-child(3),
+    .cards-container .feature-card:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .cards-container .feature-card:nth-child(5) {
+        grid-column: span 2;
     }
 }
